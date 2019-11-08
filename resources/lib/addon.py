@@ -28,16 +28,15 @@ def main_menu():
         is_playable = True
 
         label = '{name} [COLOR gray]| {label}[/COLOR]'.format(**channel)
-        plot = 'Regionale televisie\n[B]{label}[/B]'.format(**channel)
-        list_item = ListItem(label=label)
-        list_item.setLabel2(channel.get('label'))
+        plot = '[B]{name}[/B]\nRegio {label}\n\n[COLOR yellow]{website}[/COLOR]'.format(**channel)
+        list_item = ListItem(label=label, label2=channel.get('label'), offscreen=True)
         list_item.setProperty(key='IsInternetStream', value='true' if is_playable else 'false')
         list_item.setProperty(key='IsPlayable', value='true' if is_playable else 'false')
         list_item.setInfo(type='video', infoLabels=dict(
             lastplayed='',
             mediatype='video',
             playcount=0,
-            plot='[B]{name}[/B]\nRegio {label}\n\n[COLOR yellow]{website}[/COLOR]'.format(**channel),
+            plot=plot,
         ))
         list_item.setArt(dict(
             icon='DefaultAddonPVRClient.png',

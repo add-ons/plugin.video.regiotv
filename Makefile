@@ -24,7 +24,7 @@ all: test zip
 
 package: zip
 
-test: sanity run
+test: sanity
 
 sanity: tox pylint
 

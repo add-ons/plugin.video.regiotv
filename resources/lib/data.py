@@ -8,7 +8,7 @@ CHANNELS = [
     dict(
         name='ATV',
         label='Antwerpen',
-#        live_stream='https://player-api.new.livestream.com/accounts/27755193/events/8452381/live.m3u8',
+        # live_stream='https://player-api.new.livestream.com/accounts/27755193/events/8452381/live.m3u8',
         live_stream='http://api.new.livestream.com/accounts/27755193/events/8452381/live.m3u8',
         logo='https://i.imgur.com/iWXUmje.jpg',
         website='https://atv.be/',
@@ -16,8 +16,8 @@ CHANNELS = [
     dict(
         name='BRUZZ',
         label='Brussel',
-#        live_stream='https://hls-origin01-bruzz.cdn02.rambla.be/adliveorigin-bruzz/_definst_/AZwy8w.smil/chunklist_b3000000.m3u8',
-#        live_stream='https://media.streamone.net/hlslive/account=H6AAMOMZSU0W/livestream=nJQBqssIRB82/live-audio101_dut=128000-video=2200000.m3u8',
+        # live_stream='https://hls-origin01-bruzz.cdn02.rambla.be/adliveorigin-bruzz/_definst_/AZwy8w.smil/chunklist_b3000000.m3u8',
+        # live_stream='https://media.streamone.net/hlslive/account=H6AAMOMZSU0W/livestream=nJQBqssIRB82/live-audio101_dut=128000-video=2200000.m3u8',
         live_stream='https://hls-origin01-bruzz.cdn02.rambla.be/adliveorigin-bruzz/_definst_/AZwy8w.smil/playlist.m3u8',
         logo='https://i.imgur.com/rcfUiWV.jpg',
         website='https://www.bruzz.be/',
@@ -32,7 +32,7 @@ CHANNELS = [
     dict(
         name='ROB-tv',
         label='Vlaams-Brabant',
-#        live_stream='https://player-api.new.livestream.com/accounts/27755193/events/8462344/live.m3u8',
+        # live_stream='https://player-api.new.livestream.com/accounts/27755193/events/8462344/live.m3u8',
         live_stream='http://api.new.livestream.com/accounts/27755193/events/8462344/live.m3u8',
         logo='https://i.imgur.com/CzQe0q2.png',
         website='https://robtv.be/',
@@ -40,7 +40,7 @@ CHANNELS = [
     dict(
         name='TVL',
         label='Limburg',
-#        live_stream='https://player-api.new.livestream.com/accounts/27755193/events/8452383/live.m3u8',
+        # live_stream='https://player-api.new.livestream.com/accounts/27755193/events/8452383/live.m3u8',
         live_stream='http://api.new.livestream.com/accounts/27755193/events/8452383/live.m3u8',
         logo='https://i.ibb.co/KGRYRmt/download.jpg',
         website='https://tvl.be/',
@@ -48,7 +48,7 @@ CHANNELS = [
     dict(
         name='TV Oost',
         label='Oost-Vlaanderen',
-#        live_stream='https://player-api.new.livestream.com/accounts/27755193/events/8511193/live.m3u8',
+        # live_stream='https://player-api.new.livestream.com/accounts/27755193/events/8511193/live.m3u8',
         live_stream='http://api.new.livestream.com/accounts/27755193/events/8511193/live.m3u8',
         logo='https://i.imgur.com/JFVEcEA.png',
         website='https://tvoost.be/',
@@ -56,7 +56,7 @@ CHANNELS = [
     dict(
         name='WTV',
         label='West-Vlaanderen',
-#        live_stream='https://hls-origin01-focus-wtv.cdn01.rambla.be/adliveorigin-focus-wtv/_definst_/VzXNby.smil/chunklist_b3000000.m3u8',
+        # live_stream='https://hls-origin01-focus-wtv.cdn01.rambla.be/adliveorigin-focus-wtv/_definst_/VzXNby.smil/chunklist_b3000000.m3u8',
         live_stream='https://hls-origin01-focus-wtv.cdn01.rambla.be/adliveorigin-focus-wtv/_definst_/VzXNby.smil/playlist.m3u8',
         logo='https://i.imgur.com/aGORIN8.png',
         website='https://www.wtv.be/',
