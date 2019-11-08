@@ -10,7 +10,8 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import os
 import json
 import time
-from xbmcextra import ADDON_ID, global_settings, import_language
+# from xbmcextra import ADDON_ID, global_settings, import_language
+from xbmcextra import ADDON_ID
 
 LOGLEVELS = ['Debug', 'Info', 'Notice', 'Warning', 'Error', 'Severe', 'Fatal', 'None']
 LOGDEBUG = 0
@@ -32,8 +33,10 @@ REGIONS = {
     'dateshort': '%Y-%m-%d',
 }
 
-GLOBAL_SETTINGS = global_settings()
-PO = import_language(language=GLOBAL_SETTINGS.get('locale.language'))
+# GLOBAL_SETTINGS = global_settings()
+GLOBAL_SETTINGS = dict()
+# PO = import_language(language=GLOBAL_SETTINGS.get('locale.language'))
+PO = dict()
 
 
 class Keyboard(object):

@@ -24,7 +24,7 @@ all: test zip
 
 package: zip
 
-test: sanity
+test: sanity unit run
 
 sanity: tox pylint
 
@@ -39,6 +39,14 @@ pylint:
 addon: clean
 	@echo -e "$(white)=$(blue) Starting sanity addon tests$(reset)"
 	kodi-addon-checker . --branch=leia
+
+unit: clean
+	@echo -e "$(white)=$(blue) Starting unit tests$(reset)"
+	python -m unittest discover
+
+run:
+	@echo -e "$(white)=$(blue) Run CLI$(reset)"
+	python test/run.py /
 
 zip: clean
 	@echo -e "$(white)=$(blue) Building new package$(reset)"
