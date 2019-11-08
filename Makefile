@@ -34,7 +34,7 @@ tox:
 
 pylint:
 	@echo -e "$(white)=$(blue) Starting sanity pylint test$(reset)"
-	pylint resources/lib/
+	pylint resources/lib/ test/
 
 addon: clean
 	@echo -e "$(white)=$(blue) Starting sanity addon tests$(reset)"

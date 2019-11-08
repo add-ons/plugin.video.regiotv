@@ -3,10 +3,11 @@
 # GNU General Public License v3.0 (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
 ''' Extra functions for testing '''
 
-# pylint: disable=invalid-name
+# pylint: disable=invalid-name,useless-object-inheritance
 
 from __future__ import absolute_import, division, print_function, unicode_literals
 import os
+import json
 import xml.etree.ElementTree as ET
 import polib
 
@@ -72,7 +73,6 @@ def read_addon_xml(path):
 
 def global_settings():
     ''' Use the global_settings file '''
-    import json
     try:
         with open('test/userdata/global_settings.json') as f:
             settings = json.load(f)
@@ -102,7 +102,6 @@ def global_settings():
 
 def addon_settings(addon_id=None):
     ''' Use the addon_settings file '''
-    import json
     try:
         with open('test/userdata/addon_settings.json') as f:
             settings = json.load(f)

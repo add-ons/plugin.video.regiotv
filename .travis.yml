@@ -11,6 +11,7 @@ sudo: false
 env:
   PYTHONPATH: resources/lib:test
   PYTHONIOENCODING: utf-8
+  CODECOV_TOKEN: 2276841b-b828-4b8d-9d62-bba4225857fe
 
 install:
 - pip install -r requirements.txt
@@ -18,7 +19,7 @@ install:
 script:
 - tox
 - tox -e flake8
-- pylint resources/lib/
+- pylint resources/lib/ test/
 #- kodi-addon-checker . --branch=leia
 - coverage run -m unittest discover
 
