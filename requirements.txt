@@ -1,0 +1,7 @@
+codecov
+kodi-addon-checker
+polib
+pylint
+git+git://github.com/dagwieers/kodi-plugin-routing.git@setup#egg=routing
+setuptools >= 41
+tox-travis
