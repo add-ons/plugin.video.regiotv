@@ -7,6 +7,15 @@
 # Regio TV Kodi add-on
 **plugin.video.regiotv** is a [Kodi](https://kodi.tv/) add-on for watching live Flemish regional channels.
 
+Available channels:
+- [ATV](https://atv.be/) *(Antwerpen)*
+- [BRUZZ](https://www.bruzz.be/) *(Brussel)*
+- [Focus TV](https://www.focustv.be/) *(West-Vlaanderen)*
+- [ROB-tv](https://robtv.be/) *(Vlaams-Brabant)*
+- [TVL](https://tvl.be/) *(Limburg)*
+- [TV Oost](https://tvoost.be/) *(Oost-Vlaanderen)*
+- [WTV](https://www.wtv.be/) *(West-Vlaanderen)*
+
 > Note: The add-on is not endorsed by any television station, and is provided 'as is' without any warranty of any kind.
 
 ## Installing
