@@ -28,7 +28,7 @@
   <disclaimer lang="nl_NL">Deze add-on wordt niet ondersteund door een televisiezender, en wordt aangeboden 'as is', zonder enige garantie.</disclaimer>
   <language>en nl</language>
   <platform>all</platform>
-  <license>GNU General Public License, v3</license>
+  <license>GPL-3.0-only</license>
   <website>https://github.com/dagwieers/plugin.video.regiotv/wiki</website>
   <source>https://github.com/dagwieers/plugin.video.regiotv</source>
   <news>
