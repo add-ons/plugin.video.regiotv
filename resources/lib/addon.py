@@ -53,6 +53,14 @@ def main_menu():
     xbmcplugin.endOfDirectory(plugin.handle, succeeded, updateListing=False, cacheToDisc=True)
 
 
+@plugin.route('/iptv/channels')
+def iptv_channels():
+    """Return JSON-M3U formatted data for all live channels"""
+    from iptvmanager import IPTVManager
+    port = int(plugin.args.get('port')[0])
+    IPTVManager().channels(port)
+
+
 def run(argv):
     ''' Addon entry point from wrapper '''
     plugin.run(argv)
