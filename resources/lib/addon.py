@@ -58,7 +58,7 @@ def iptv_channels():
     """Return JSON-M3U formatted data for all live channels"""
     from iptvmanager import IPTVManager
     port = int(plugin.args.get('port')[0])
-    IPTVManager().channels(port)
+    IPTVManager(port).send_channels()
 
 
 def run(argv):

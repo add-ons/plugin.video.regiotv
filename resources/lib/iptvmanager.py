@@ -7,25 +7,31 @@ from __future__ import absolute_import, division, unicode_literals
 from data import CHANNELS
 
 
-class IPTVManager:
+class IPTVManager(object):
     """Interface to IPTV Manager"""
 
-    @staticmethod
-    def __init__():
+    def __init__(self, port):
         """Initialize IPTV Manager object"""
+        self.port = port
 
-    def send_data(self, host, port, data):
-        """Send data to IPTV Manager"""
-        import json
-        import socket
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.connect((host, port))
-        try:
-            sock.send(json.dumps(data))
-        finally:
-            sock.close()
+    def via_socket(func):
+        """Send the output of the wrapped function to socket"""
 
-    def channels(self, port):
+        def send(self):
+            """Decorator to send over a socket"""
+            import json
+            import socket
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.connect(('127.0.0.1', self.port))
+            try:
+                sock.send(json.dumps(func()))
+            finally:
+                sock.close()
+
+        return send
+
+    @via_socket
+    def send_channels():
         """Return JSON-M3U formatted information to IPTV Manager"""
         streams = []
         for channel in CHANNELS:
@@ -36,6 +42,5 @@ class IPTVManager:
                 name='{name} ({label})'.format(**channel),
                 logo=channel.get('logo'),
                 stream=channel.get('live_stream'),
-                radio=False,
             ))
-        self.send_data('localhost', port, dict(version=1, streams=streams))
+        return dict(version=1, streams=streams)
