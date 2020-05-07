@@ -27,6 +27,7 @@ Beschikbare zenders: ATV, BRUZZ, Focus TV, ROB-tv, TVL, TV Oost, WTV
   <license>GPL-3.0-only</license>
   <website>https://github.com/add-ons/plugin.video.regiotv/wiki</website>
   <source>https://github.com/add-ons/plugin.video.regiotv</source>
+  <forum>https://github.com/add-ons/plugin.video.regiotv/issues</forum>
   <news>
 v0.1.1 (2020-02-11)
 - Fix regional channels BRUZZ, Focus TV and WTV

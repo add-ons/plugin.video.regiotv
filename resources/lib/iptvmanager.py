@@ -41,6 +41,7 @@ class IPTVManager(object):
                 id=channel.get('website'),
                 name='{name} ({label})'.format(**channel),
                 logo=channel.get('logo'),
+                preset=channel.get('preset'),
                 stream=channel.get('live_stream'),
             ))
         return dict(version=1, streams=streams)

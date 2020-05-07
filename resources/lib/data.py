@@ -12,6 +12,7 @@ CHANNELS = [
         live_stream='http://api.new.livestream.com/accounts/27755193/events/8452381/live.m3u8',
         logo='http://static.atv.be/atvbe/meta/android-chrome-192x192.png',
         website='https://atv.be/',
+        preset=201,
     ),
     dict(
         name='BRUZZ',
@@ -21,6 +22,7 @@ CHANNELS = [
         live_stream='https://hls-origin01-bruzz.cdn02.rambla.be/main/adliveorigin-bruzz/_definst_/V3n5YY.smil/chunklist.m3u8',
         logo='https://i.imgur.com/rcfUiWV.jpg',
         website='https://www.bruzz.be/',
+        preset=203,
     ),
     dict(
         name='Focus TV',
@@ -29,6 +31,7 @@ CHANNELS = [
         live_stream='https://hls-origin01-focus-wtv.cdn01.rambla.be/main/adliveorigin-focus-wtv/_definst_/ARXpX7.smil/playlist.m3u8?',
         logo='https://i.imgur.com/aGORIN8.png',
         website='https://www.focustv.be/',
+        preset=204,
     ),
     dict(
         name='ROB-tv',
@@ -37,6 +40,7 @@ CHANNELS = [
         live_stream='http://api.new.livestream.com/accounts/27755193/events/8462344/live.m3u8',
         logo='http://static.tvl.be/robtvbe/meta/android-chrome-192x192.png',
         website='https://robtv.be/',
+        preset=206,
     ),
     dict(
         name='TVL',
@@ -45,6 +49,7 @@ CHANNELS = [
         live_stream='http://api.new.livestream.com/accounts/27755193/events/8452383/live.m3u8',
         logo='http://static.tvl.be/tvlbe/meta/android-chrome-192x192.png',
         website='https://tvl.be/',
+        preset=208,
     ),
     dict(
         name='TV Oost',
@@ -53,6 +58,7 @@ CHANNELS = [
         live_stream='http://api.new.livestream.com/accounts/27755193/events/8511193/live.m3u8',
         logo='http://static.tvoost.be/tvoostbe/meta/android-chrome-192x192.png',
         website='https://tvoost.be/',
+        preset=209,
     ),
     dict(
         name='WTV',
@@ -61,5 +67,6 @@ CHANNELS = [
         live_stream='https://hls-origin01-focus-wtv.cdn01.rambla.be/main/adliveorigin-focus-wtv/_definst_/AG1G1l.smil/playlist.m3u8?',
         logo='https://i.imgur.com/aGORIN8.png',
         website='https://www.wtv.be/',
+        preset=210,
     ),
 ]
