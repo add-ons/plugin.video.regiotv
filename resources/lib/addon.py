@@ -6,8 +6,7 @@ from __future__ import absolute_import, division, unicode_literals
 from routing import Plugin
 from data import CHANNELS
 
-# pylint: disable=invalid-name
-plugin = Plugin()
+plugin = Plugin()  # pylint: disable=invalid-name
 
 
 @plugin.route('/')
