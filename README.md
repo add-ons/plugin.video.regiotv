@@ -27,6 +27,9 @@ In Kodi, simply search the add-ons for `Regio TV` and install the Regio TV video
 You can report issues at [our GitHub project](https://github.com/add-ons/plugin.video.regiotv).
 
 ## Releases
+### v0.1.2 (2020-06-02)
+- Add support for IPTV Manager
+
 ### v0.1.1 (2020-02-11)
 - Fix regional channels BRUZZ, Focus TV and WTV
 
