@@ -12,12 +12,13 @@ plugin = Plugin()  # pylint: disable=invalid-name
 @plugin.route('/')
 def main_menu():
     ''' The Regio TV plugin main menu '''
+    from xbmcaddon import Addon
     from xbmcgui import ListItem
     import xbmcplugin
 
     xbmcplugin.setContent(plugin.handle, content='files')
     xbmcplugin.setPluginCategory(plugin.handle, category='Zenders')
-    xbmcplugin.setPluginFanart(plugin.handle, image='DefaultAddonPVRClient.png')
+    xbmcplugin.setPluginFanart(plugin.handle, image=Addon().getAddonInfo('fanart'))
     xbmcplugin.addSortMethod(plugin.handle, sortMethod=xbmcplugin.SORT_METHOD_UNSORTED)
     xbmcplugin.addSortMethod(plugin.handle, sortMethod=xbmcplugin.SORT_METHOD_LABEL)
 
