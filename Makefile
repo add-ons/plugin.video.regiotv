@@ -1,10 +1,12 @@
 export PYTHONPATH := $(CURDIR)/resources/lib:$(CURDIR)/tests
 PYTHON := python
+KODI_PYTHON_ABIS := 3.0.0 2.25.0
 
 name = $(shell xmllint --xpath 'string(/addon/@id)' addon.xml)
 version = $(shell xmllint --xpath 'string(/addon/@version)' addon.xml)
 git_branch = $(shell git rev-parse --abbrev-ref HEAD)
 git_hash = $(shell git rev-parse --short HEAD)
+matrix = $(findstring $(shell xmllint --xpath 'string(/addon/requires/import[@addon="xbmc.python"]/@version)' addon.xml), $(word 1,$(KODI_PYTHON_ABIS)))
 
 ifdef release
 	zip_name = $(name)-$(version).zip
