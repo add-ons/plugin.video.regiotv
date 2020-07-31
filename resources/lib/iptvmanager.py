@@ -37,11 +37,14 @@ class IPTVManager(object):
         for channel in CHANNELS:
             if not channel.get('live_stream'):
                 continue
+            live_stream = channel.get('live_stream')
+            if channel.get('referer'):
+                live_stream += '|referer=' + channel.get('referer')
             streams.append(dict(
                 id=channel.get('website'),
                 name='{name} ({label})'.format(**channel),
                 logo=channel.get('logo'),
                 preset=channel.get('preset'),
-                stream=channel.get('live_stream'),
+                stream=live_stream,
             ))
         return dict(version=1, streams=streams)

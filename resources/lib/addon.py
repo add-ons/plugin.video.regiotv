@@ -47,6 +47,8 @@ def main_menu():
         # list_item.setIsFolder(is_folder)
 
         url = channel.get('live_stream')
+        if channel.get('referer'):
+            url += '|referer=' + channel.get('referer')
         listing.append((url, list_item, is_folder))
 
     succeeded = xbmcplugin.addDirectoryItems(plugin.handle, listing, len(listing))
