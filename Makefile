@@ -6,7 +6,12 @@ version = $(shell xmllint --xpath 'string(/addon/@version)' addon.xml)
 git_branch = $(shell git rev-parse --abbrev-ref HEAD)
 git_hash = $(shell git rev-parse --short HEAD)
 
-zip_name = $(name)-$(version)-$(git_branch)-$(git_hash).zip
+ifdef release
+	zip_name = $(name)-$(version).zip
+else
+	zip_name = $(name)-$(version)-$(git_branch)-$(git_hash).zip
+endif
+
 include_files = addon.xml LICENSE README.md resources/
 include_paths = $(patsubst %,$(name)/%,$(include_files))
 exclude_files = \*.new \*.orig \*.pyc \*.pyo
@@ -60,6 +65,15 @@ build: clean
 	@rm -f ../$(zip_name)
 	cd ..; zip -r $(zip_name) $(include_paths) -x $(exclude_files)
 	@echo -e "$(white)=$(blue) Successfully wrote package as: $(white)../$(zip_name)$(reset)"
+
+multizip: clean
+	@-$(foreach abi,$(KODI_PYTHON_ABIS), \
+		echo "cd /addon/requires/import[@addon='xbmc.python']/@version\nset $(abi)\nsave\nbye" | xmllint --shell addon.xml; \
+		matrix=$(findstring $(abi), $(word 1,$(KODI_PYTHON_ABIS))); \
+		if [ $$matrix ]; then version=$(version)+matrix.1; else version=$(version); fi; \
+		echo "cd /addon/@version\nset $$version\nsave\nbye" | xmllint --shell addon.xml; \
+		make build; \
+	)
 
 clean:
 	@echo -e "$(white)=$(blue) Cleaning up$(reset)"
