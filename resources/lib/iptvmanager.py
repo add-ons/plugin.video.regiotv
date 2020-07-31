@@ -14,7 +14,7 @@ class IPTVManager(object):
         """Initialize IPTV Manager object"""
         self.port = port
 
-    def via_socket(func):
+    def via_socket(func):  # pylint: disable=no-self-argument
         """Send the output of the wrapped function to socket"""
 
         def send(self):
@@ -24,14 +24,14 @@ class IPTVManager(object):
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.connect(('127.0.0.1', self.port))
             try:
-                sock.sendall(json.dumps(func()))
+                sock.sendall(json.dumps(func()))  # pylint: disable=not-callable
             finally:
                 sock.close()
 
         return send
 
     @via_socket
-    def send_channels():
+    def send_channels():  # pylint: disable=no-method-argument
         """Return JSON-M3U formatted information to IPTV Manager"""
         streams = []
         for channel in CHANNELS:
