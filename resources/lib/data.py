@@ -74,4 +74,13 @@ CHANNELS = [
         website='https://www.wtv.be/',
         preset=210,
     ),
+    dict(
+        name='BVN',
+        label='Lage landen',
+        description='Het Beste van Vlaanderen en Nederland',
+        live_stream='https://npobvn-prd.cdn.eurovisioncdn.net/live/npo/u/npo/drm/dash_cenc/bvn/0/0/0/bvn.isml/stream.mpd',
+        logo='https://www.bvn.tv/wp-content/themes/bvn/assets/img/bvn-logo.png',
+        website='https://bnv.tv/',
+        preset=220,
+    ),
 ]
