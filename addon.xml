@@ -2,7 +2,6 @@
 <addon id="plugin.video.regiotv" name="Regio TV" version="0.1.2" provider-name="dagwieers">
 <requires>
   <import addon="script.module.routing" version="0.2.3"/>
-  <import addon="plugin.video.vimeo" version="5.1.4"/>
   <import addon="xbmc.python" version="2.25.0" />
 </requires>
 <extension point="xbmc.python.pluginsource" library="resources/lib/addon_entry.py">
