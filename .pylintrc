@@ -4,5 +4,6 @@ disable=
     fixme,  # Allow FIXMEs in code is a useful practice
     import-outside-toplevel,  # Done on purpose to reduce overhead at startup
     line-too-long,  # Flake8 is used for testing line-length
+    super-with-arguments,
     too-many-function-args,
     useless-object-inheritance,
