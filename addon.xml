@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.regiotv" name="Regio TV" version="0.1.3" provider-name="dagwieers">
+<addon id="plugin.video.regiotv" name="Regio TV" version="0.1.4" provider-name="dagwieers">
 <requires>
   <import addon="script.module.routing" version="0.2.3"/>
   <import addon="xbmc.python" version="2.25.0"/>
