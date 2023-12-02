@@ -10,3 +10,4 @@ disable=
     use-dict-literal,
     unspecified-encoding,
     consider-using-f-string,
+    broad-exception-raised,
