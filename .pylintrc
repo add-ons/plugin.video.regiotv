@@ -7,3 +7,7 @@ disable=
     super-with-arguments,
     too-many-function-args,
     useless-object-inheritance,
+    use-dict-literal,
+    unspecified-encoding,
+    consider-using-f-string,
+    broad-exception-raised,
