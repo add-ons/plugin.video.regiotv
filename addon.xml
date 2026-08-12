@@ -11,14 +11,14 @@
   <summary lang="en_GB">Flemish regional television</summary>
   <description lang="en_GB">The Regio TV add-on lists all available Flemish regional television stations.
 
-Available channels: ATV, BRUZZ, Focus TV, ROB-tv, TVL, TV Oost, WTV
+Available channels: ATV, AVS, BRUZZ, Focus TV, WTV, ROBtv, TVL, TV Oost
 
 [I]This add-on is not endorsed by any television station, and is provided 'as is' without any warranty of any kind.[/I]</description>
   <disclaimer lang="en_GB">This add-on is not endorsed by any television station, and is provided 'as is' without any warranty of any kind.</disclaimer>
   <summary lang="nl_NL">Vlaamse regionale televisie.</summary>
   <description lang="nl_NL">De Regio TV add-on geeft een overzicht van alle Vlaamse regionale televisiezenders.
 
-Beschikbare zenders: ATV, BRUZZ, Focus TV, ROB-tv, TVL, TV Oost, WTV
+Beschikbare zenders: ATV, AVS, BRUZZ, Focus TV, WTV, ROBtv, TVL, TV Oost
 
 [I]Deze add-on wordt niet ondersteund door een televisiezender, en wordt aangeboden 'as is', zonder enige garantie.[/I]</description>
   <disclaimer lang="nl_NL">Deze add-on wordt niet ondersteund door een televisiezender, en wordt aangeboden 'as is', zonder enige garantie.</disclaimer>
@@ -29,6 +29,10 @@ Beschikbare zenders: ATV, BRUZZ, Focus TV, ROB-tv, TVL, TV Oost, WTV
   <source>https://github.com/add-ons/plugin.video.regiotv</source>
   <forum>https://github.com/add-ons/plugin.video.regiotv/issues</forum>
   <news>
+
+v0.2.0 (2026-12-08)
+- Updated URLs and logos and added AVS livestream
+
 v0.1.3 (2021-03-04)
 - Fix an exception on Matrix when syncing channel/tvguide from IPTV Manager
 - Remove WTV, combine with Focus TV

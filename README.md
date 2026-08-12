@@ -29,7 +29,7 @@ You can report issues at [our GitHub project](https://github.com/add-ons/plugin.
 
 ## Releases
 ### v0.2.0 (2026-12-08)
-- Fixed URLs and added AVS livestream
+- Updated URLs and logos and added AVS livestream
 
 ### v0.1.4 (2021-03-05)
 - Undo harmless change
