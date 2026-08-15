@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.regiotv" name="Regio TV" version="0.1.6" provider-name="peno64, dagwieers">
+<addon id="plugin.video.regiotv" name="Regio TV" version="0.2.0" provider-name="peno64, dagwieers, sonodavid">
 <requires>
   <import addon="script.module.routing" version="0.2.3"/>
-  <import addon="xbmc.python" version="2.25.0"/>
+  <import addon="xbmc.python" version="3.0.0"/>
 </requires>
 <extension point="xbmc.python.pluginsource" library="resources/lib/addon_entry.py">
   <provides>video</provides>
